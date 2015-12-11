@@ -1,0 +1,43 @@
+.vf-fields {
+    position: relative;
+}
+
+.vf-description {
+    color: #808080;
+}
+
+.vf-tooltip {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.vf-select {
+    min-width: 250px;
+}
+
+.vf-selecter {
+    max-width: 350px;
+}
+
+.vf-slider {
+    margin: 10px;
+}
+
+.vf-img-holder img {
+    max-width: 250px;
+    border: 1px solid #ccc;
+    background: #f5f5f5 none repeat scroll 0 0;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 5px;
+}
+
+.select2-container {
+    z-index: 200000;
+}
+
+.vf-shortcode-selector > .select2 {
+    width: 100% !important;
+}
