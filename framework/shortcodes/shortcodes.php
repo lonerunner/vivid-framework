@@ -14,8 +14,8 @@ if ( ! defined( 'ABSPATH' ) ) die( 'Nope! Not gonna happen!' );
 function vivid_framework_load_shortcodes() {
 	global $theme_shortcodes;
 	// Check if $theme_shortcodes variable is set
-	if(isset($theme_shortcodes)) {
-		foreach($theme_shortcodes as $key => $name ){
+	if( isset($theme_shortcodes) ) {
+		foreach( $theme_shortcodes as $key => $name ){
 			/* Include shortcode file
 			 * The code looks a bit confusing, but all it does is take a key name from array
 			 * and load the shortcode with a properly named path and file

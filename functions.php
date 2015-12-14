@@ -165,7 +165,7 @@ $theme_options = array (
 			),
 
 
-//			// Simple text input field
+			// Simple text input field
 			'basic_text' => array(
 				'title' => 'Regular text with description and tooltip',
 				'desc'  => 'Enter the link to your logo image',
@@ -303,7 +303,7 @@ $theme_options = array (
 								'ford'      => 'Ford',
 								'opel'      => 'Opel'
 								),
-				'std'       => array('bmw', 'ford')
+				'std'       => 'bmw'
 			),
 
 			'another_select2box' => array(

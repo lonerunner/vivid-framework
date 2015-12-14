@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) die( 'Nope! Not gonna happen!' );
  * When user activates theme let's display thank you
  * message and link to theme options
  * */
-if (is_admin() && $pagenow == "themes.php" && isset($_GET['activated']) ) {
+if ( is_admin() && $pagenow == "themes.php" && isset($_GET['activated']) ) {
 
 	function vivid_framework_welcome_theme_settings() {
 		echo '<div class="updated is-dismissible">';
@@ -32,14 +32,21 @@ if (is_admin() && $pagenow == "themes.php" && isset($_GET['activated']) ) {
  * If user can't edit theme options there is no need to load
  * all of the theme functions
  * */
+function vivid_framework_check_permission() {
+	if ( current_user_can('edit_theme_options') ) {
+		global $theme_options;
 
-if (current_user_can('edit_theme_options')) {
-	// Load menu page
-	add_action( 'admin_menu', 'vivid_framework_options_menu' );
+		// Check if $theme_options exists, otherwise don't load options page.
+		if( isset($theme_options) ) {
+			// Load menu page
+			add_action( 'admin_menu', 'vivid_framework_options_menu' );
 
-	// Load settings for theme
-	add_action( 'admin_init', 'vivid_framework_settings_init' );
+			// Load settings for theme
+			add_action( 'admin_init', 'vivid_framework_settings_init' );
+		}
+	}
 }
+add_action( 'init', 'vivid_framework_check_permission' );
 
 /*
  * Add admin menu with theme options
