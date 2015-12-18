@@ -1,5 +1,5 @@
 # Introduction
-**Vivid Framework** is built as foundation to Vivid Themes for easier theme management and configuration. The framework it self is intended to help developing themes with ease and speed by incorporating extended funcionality for adding theme options, metaboxes and shortcodes easily by adding options to the array list.
+**Vivid Framework** is built as foundation to Vivid Themes for easier theme management and configuration. The framework it self is intended to help developing themes with ease and speed by incorporating extended funcionality for adding theme options, metaboxes and shortcodes easily by adding options to the array list. I have tried to keep the framework as light as possible and as much as possible to follow coding standards according to WordPress codex.
 
 
 # Supported fields
@@ -425,4 +425,30 @@ For more how it looks please take a look at dropcap shortcode example.
 
 And lastly, for shortcodes to work you must have global variable named exactly `$theme_shortcodes` with list of all shortcodes you use in the theme.
 
+### Donate to the Development
+If you find this framework useful or helped you in any way, i would appreciate any donations. Donations will help out with more free time for further development. 
 
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="YUEFT7E5JP8A2">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+### Credits
+- Thanks to https://codex.wordpress.org/ for extensive informations and documentation.
+- https://select2.github.io/ for jQuery select and multiselect boxes
+- https://formstone.it/components/dropdown/ for multiselect scroll box
+- https://formstone.it/components/checkbox/ for toggle jQuery plugins
+- http://www.rhyzz.com/repeatable-fields.html for repeatable fields
+- My website http://onedesign.me
+- Framework website http://vividthemes.com/framework
+
+### ToDo List
+
+- More flexible approach for shortcodes.
+- Metaboxes for taxonomies. Now since WordPress 4.4 natively supports term meta, we can implement metaboxes to terms, categories, tags more easily without creating new fields to database.
+
+### Changelog
+##### v2.0
+- Complete framework redesign, the old code is dropped completely.
