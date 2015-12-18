@@ -428,12 +428,7 @@ And lastly, for shortcodes to work you must have global variable named exactly `
 ### Donate to the Development
 If you find this framework useful or helped you in any way, i would appreciate any donations. Donations will help out with more free time for further development. 
 
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="YUEFT7E5JP8A2">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
+[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YUEFT7E5JP8A2)
 
 ### Credits
 - Thanks to https://codex.wordpress.org/ for extensive informations and documentation.
